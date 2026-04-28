@@ -1,0 +1,17 @@
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.tag {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.content {
+    margin-bottom: 16px;
+}
+
+.date {
+    color: #666;
+}
