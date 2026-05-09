@@ -9,15 +9,16 @@ export default function NoteDetailsClient() {
   const params = useParams<{ id: string }>();
   const id = params.id;
 
-  const {
-    data: note,
-    isLoading,
-    error,
-  } = useQuery({
-    queryKey: ["note", id],
-    queryFn: () => fetchNoteById(id),
-    enabled: Boolean(id),
-  });
+const {
+  data: note,
+  isLoading,
+  error,
+} = useQuery({
+  queryKey: ["note", id],
+  queryFn: () => fetchNoteById(id),
+  enabled: Boolean(id),
+  refetchOnMount: false,
+});
 
   if (isLoading) {
     return <p>Loading, please wait...</p>;

@@ -8,7 +8,7 @@ import type { NoteTag } from "@/types/note";
 import css from "./NoteForm.module.css";
 import type { CreateNoteData } from "@/lib/api";
 
-interface Props {
+interface NoteFormProps {
   onClose: () => void;
 }
 
@@ -18,7 +18,7 @@ const schema = Yup.object({
   tag: Yup.mixed<NoteTag>().required(),
 });
 
-export default function NoteForm({ onClose }: Props) {
+export default function NoteForm({ onClose }: NoteFormProps) {
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
