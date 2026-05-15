@@ -1,0 +1,15 @@
+.menuList {
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+
+.menuItem {
+  margin-bottom: 8px;
+}
+
+.menuLink {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+}

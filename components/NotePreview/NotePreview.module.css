@@ -1,0 +1,14 @@
+.preview {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
